@@ -13,10 +13,10 @@ int main()
   {
       printf("%d is the largest.", b);
   }
-	else
-	{
-			printf("%d is the largest.", c);
-	}
-	return (0);
+  else
+  {
+      printf("%d is the largest.", c);
+  }
+  return (0);
 }
   
