@@ -3,15 +3,26 @@
 int main()
 {
   int a;
-  printf("Enter a 4 digit number: ");
+  printf("Enter a number: ");
   scanf("%d", &a);
-  int r=0;
+  int b=a;
+  int r=0,r_count=0;
   int sum=0;
-  for (int i=1; i<=4; i++)
+  int k;
+  for (k=1;;k++)
   {
-    r=a%10;
+      r_count=a%10;
+      a=a/10;
+      if(r_count==0 && a==0)
+      {
+          break;
+      }
+  }
+  for (int i=1; i<=k; i++)
+  {
+    r=b%10;
     sum +=r;
-    a=a/10;
+    b=b/10;
   }
   printf("Sum of the digits of the number is: %d", sum);
   return(0);
