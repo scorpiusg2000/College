@@ -55,7 +55,6 @@ int main()
             {
                 mat3[a][b]=mat1[a][b]+mat2[a][b];
             }
-            printf("\n");
         }
         printf("Result: \n");
         for(int a=0;a<i;a++)
