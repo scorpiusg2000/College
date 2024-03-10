@@ -49,7 +49,6 @@ void max(int a, int b, int mat[a][b])
         printf("%d\n", row_max[i]);
     }
     int column_max[b];
-    int max_c;
     for(int i=0;i<b;i++)
     {
         column_max[i]=mat[0][i];
