@@ -1,0 +1,204 @@
+print ("Welcome to Temperature Converter")
+
+choice = input("Would you like to try it? Answer in Yes or No  ")
+
+if choice.upper() == "YES":
+
+    V = float(input("Value: "))
+    U = input ("Unit of Above value is (C)elcius or (F)arenheit or (K)elvin or (R)ankine or (Re)aumur: ")
+    Unit = input("Convert INTO (C)elcius or (F)arenheit or (K)elvin or (R)ankine or (Re)aumur: ")
+
+    #Into Celsius
+    if Unit.upper () == "C":
+
+        #From Farenheit
+        if U.upper() == "F":   
+          result = float((5*V-160)/9)
+          print (float(result))
+          print ("Thank You and have a nice day ahead")
+
+        #From Celsius
+        elif U.upper() == "C":
+          print (V)
+          print ("Thank You and have a nice day ahead")
+
+        #From Kelvin
+        elif U.upper() == "K":
+          result = float(V-273.15)
+          print (float(result))
+          print ("Thank You and have a nice day ahead")
+
+        #From Rankine
+        elif U.upper() == "R":
+          result = float((V-491.67)/1.8)
+          print (float(result))
+          print ("Thank You and have a nice day ahead")
+
+        #From Reaumur
+        elif U.upper() == "RE":
+          result = float((V/0.8))
+          print (float(result))
+          print ("Thank You and have a nice day ahead")
+
+        else: print ("Wrong input received")
+
+    # Into Farenheit
+    elif Unit.upper() == "F":
+
+      #From Celsius
+      if U.upper() == "C":
+          
+          Result = float((9*V+160)/5)
+          print (float(Result))
+          print ("Thank You and have a nice day ahead")
+
+      #From Farenheit
+      elif U.upper() == "F":
+
+          print (V)
+          print ("Thank You and have a nice day ahead")
+
+      #From Kelvin
+      elif U.upper() == "K":
+
+        result = float((9*(V-273.15)+160)/5)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Rankine
+      elif U.upper() == "R":
+        rEsult = float((V-459.67))
+        print (float(rEsult))
+        print ("Thank You and have a nice day ahead")
+
+      #From Reaumur
+      elif U.upper() == "RE":
+        reSult = float((9*V+128)/4)
+        print (float(reSult))
+        print ("Thank You and have a nice day ahead")
+
+
+      else: print ("Wrong input received")
+
+    #Into Kelvin
+    elif Unit.upper() == "K":
+      
+      #From Kelvin
+      if U.upper() == "K":
+        
+        print (V)
+        print ("Thank You and have a nice day ahead")
+
+      #From Celsius
+      elif U.upper() == "C":
+
+        result = float(V+273.15)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Farenheit
+      elif U.upper() == "F":
+
+        result = float((V+459.67)/8)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Rankine
+      elif U.upper() == "R":
+
+        result = float(V/1.8)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Reaumur
+      elif U.upper() == "RE":
+
+        Result = float (V*1.25 + 273.15)
+        print (float(Result))
+        print ("Thank You and have a nice day ahead")
+
+      else: print ("Wrong input received")
+
+    #Into Rankine
+    elif Unit.upper() == "R":
+
+      #From Celcius
+      if U.upper() == "C":
+
+        result = float((V+273.15)*1.8)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Farenheit
+      elif U.upper() == "F":
+
+        result = float(V+459.67)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Kelvin
+      elif U.upper() == "K":
+
+        result = float(V*1.8)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Rankine
+      elif U.upper() == "R":
+
+        print (V)
+
+      #From Reaumur
+      elif U.upper() == "RE":
+
+        result = float((V*9/4)+491.67)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      else: print ("Wrong input received")
+
+    #Into Reaumur
+    elif Unit.upper() == "RE":
+
+      #From Celcius
+      if U.upper() == "C":
+
+        result = float(V*0.8)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Farenheit
+      elif U.upper() == "F":
+
+        result = float ((V-32)*4/9)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Kelvin
+      elif U.upper() == "K":
+
+        result = float((V-273.15)*0.8)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Rankine
+      elif U.upper() == "R":
+
+        result = float((V-491.67)*4/9)
+        print (float(result))
+        print ("Thank You and have a nice day ahead")
+
+      #From Reaumur
+      elif U.upper() == "RE":
+
+        print (V)
+
+      else: print ("Wrong input received")
+
+    else: print ("Wrong input received")
+            
+elif choice.upper() == "NO": 
+  print ("Thank You and have a nice day ahead")
+
+else: print ("Wrong input received")
+quit()
